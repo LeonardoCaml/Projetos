@@ -5,18 +5,15 @@
     margin: 0px;
     padding: 0px;
 }
-body,html {
-    min-height: 100vh;
+ul {
+    display: flex;
+    flex-direction: row;
 }
 ul > li, a {
     text-decoration: none;
     color: rgb(255, 255, 255);
     list-style: none;
     padding: 20px 15px;
-}
-ul {
-    display: flex;
-    flex-direction: row;
 }
 h1{
     font-size: 8vw;
@@ -55,38 +52,42 @@ p {
     width: 250px;
     border-radius: 10px;
 }
-.historia {
+.contain {
     display: flex;
     justify-content: space-between;
     height: 50vw;
     margin: 10px 0px;
 }
 .text {
-    height: 50%;
     width: 50%;
-    margin: 20px;
+    padding: 20px;
 }
-#Img1 {
+.Img {
     height: 100%;
     width: 50%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: auto 0px;
+}
+.s1 {
     background-image: url(../Basquete/images/page1.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    margin: auto 0px;
 }
-#Img2 {
-    height: 100%;
-    width: 50%;
+.s2 {
     background-image: url(../Basquete/images/page2.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    margin: auto 0px;
 }
-#Img3 {
-    height: 100%;
-    width: 50%;
+.s3 {
     background-image: url(../Basquete/images/page3.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    margin: auto 0px;
 }
+
+/* @media (min-width: 500px) {
+    .Img {
+        width: 100vh;
+        background-size: 100%;
+    }
+    .historia {
+       height: 100vh; 
+    }
+    .text {
+        width: 100%;
+    }
+} */
