@@ -56,18 +56,16 @@ p {
     display: flex;
     justify-content: space-between;
     height: 50vw;
-    margin: 10px 0px;
 }
 .text {
     width: 50%;
-    padding: 20px;
+    padding: 10px 20px;
 }
 .Img {
     height: 100%;
     width: 50%;
     background-repeat: no-repeat;
     background-size: 100%;
-    margin: auto 0px;
 }
 .s1 {
     background-image: url(../Basquete/images/page1.jpg);
@@ -79,15 +77,21 @@ p {
     background-image: url(../Basquete/images/page3.jpg);
 }
 
-/* @media (min-width: 500px) {
-    .Img {
-        width: 100vh;
-        background-size: 100%;
+@media (max-width: 700px) {
+    .contain {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
     }
-    .historia {
-       height: 100vh; 
+    .Img {
+        width: 97vw;
     }
     .text {
-        width: 100%;
+        width: 90%;
+        margin: 50px 0px;
     }
-} */
+    #records {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
