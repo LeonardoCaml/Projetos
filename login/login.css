@@ -1,0 +1,104 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
+
+body {
+    background-color: #ff5c00;
+    font-size: 13pt;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+#contain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 465px;
+    height: 550px;
+    background: #FFFFFF;
+    color: #000000;
+    padding: 30px;
+    border-radius: 20px;
+}
+.caixa {
+    display: flex;
+    flex-direction: column;
+}
+#titulo {
+    display: flex;
+    justify-content: center;
+}
+.icon-mode {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 25px;
+    
+}
+.icon-mode img {
+    width: 25px;
+    cursor: pointer;
+}
+.counts {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    margin: 40px 0px;
+}
+.counts img {
+    width: 50px;
+    cursor: pointer;
+}
+#botao {
+    width: 350px;
+    height: 60px;
+    background: #0085FF;
+    color: #FFFFFF;
+    border-radius: 20px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+#email{
+    display: flex;
+    align-items: center;
+    cursor: text;
+}
+#senha {
+    display: flex;
+    align-items: center;
+    cursor:text;
+}
+#cadastro {
+    margin-left: 15px;
+    font-size: 0.7em;
+    display: flex;
+    align-items: center;
+    color: #0085FF;
+}
+#cadastro a {
+    text-decoration: none;
+    color: #0085FF;
+}
+input {
+    border: none;
+    width: 285px;
+    height: 40px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+    background: transparent;
+}
+input:focus {
+    outline: none;
+}
+label img {
+    width: 30px;
+    padding: 10px;
+}
+
+.dark#contain {
+    background: rgb(57, 46, 97);
+    color: #FFFFFF;
+}
