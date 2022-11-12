@@ -10,6 +10,7 @@ body {
     justify-content: center;
 }
 #contain {
+    transition: .3s;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -99,6 +100,17 @@ label img {
 }
 
 .dark#contain {
-    background: rgb(57, 46, 97);
+    transition: .3s;
+    background: rgb(48, 41, 73);
     color: #FFFFFF;
+}
+
+.dark label img {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}
+
+.dark input {
+    color: #FFFFFF;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.877);;
 }
