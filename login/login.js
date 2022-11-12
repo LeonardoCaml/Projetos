@@ -8,7 +8,5 @@ mode.addEventListener('click', () => {
         form.classList.toggle('dark');
 
         return;
-    } else {
-        document.body.style.background = "#ff5c00";
     }
 });
