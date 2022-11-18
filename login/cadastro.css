@@ -1,0 +1,66 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
+body {
+    background: #ff5c00;
+    font-family: 'Inter', sans-serif;
+    font-size: 10pt;
+}
+svg  {
+    width: 15px;
+    padding: 10px;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cad_box {
+    background: white;
+    width: 30%;
+    padding: 50px;
+    border-radius: 20px;
+}
+.form {
+    display: flex;
+    align-items: center;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 0 0;
+    gap: 50px;
+}
+.buttons #return  {
+    border: 2px  solid #0085FF;
+    color: #0085FF;
+    transition: .3s;
+}
+.buttons #confirm {
+    border: 2px  solid #0085FF;
+    color: #0085FF;
+    transition: .3s;
+}
+a {
+    text-decoration: none;
+    color: #0085FF;
+    border-radius: 10px;
+    font-size: 15pt;
+    margin: 5px;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+    
+input {
+    border: none;
+    width: 400px;
+    height: 25px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+}
+input:focus {
+    outline: none;
+}
