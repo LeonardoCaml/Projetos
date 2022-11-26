@@ -34,12 +34,10 @@ svg  {
 }
 .buttons #return  {
     border: 2px  solid #0085FF;
-    color: #0085FF;
     transition: .3s;
 }
 .buttons #confirm {
     border: 2px  solid #0085FF;
-    color: #0085FF;
     transition: .3s;
 }
 a {
@@ -55,12 +53,17 @@ a {
     justify-content: center;
     cursor: pointer;
 }
+
+a:hover {
+    background: #0085FF;
+    color: white;
+}
     
 input {
     border: none;
     width: 400px;
     height: 25px;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
 }
 input:focus {
     outline: none;
