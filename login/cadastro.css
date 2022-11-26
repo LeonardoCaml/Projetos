@@ -53,14 +53,13 @@ a {
     justify-content: center;
     cursor: pointer;
 }
-
 a:hover {
     background: #0085FF;
     color: white;
 }
-    
 input {
     border: none;
+    padding: 5px 0;
     width: 400px;
     height: 25px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.4);
@@ -68,7 +67,6 @@ input {
 input:focus {
     outline: none;
 }
-
 .erro {
     display: block;
 }
