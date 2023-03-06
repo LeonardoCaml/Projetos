@@ -1,0 +1,98 @@
+@charset 'UTF-8';
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+
+:root {
+  --white-font: #f3f7fa;
+  --blue-font: #1c2d3c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-image: url("../img/landing\ page\ clipdrop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+h1,
+h2,
+h3,
+p,
+a {
+  font-size: 15px;
+}
+
+header {
+  display: flex;
+  height: 10%;
+  align-items: center;
+}
+
+header ul {
+  display: flex;
+  gap: 30%;
+  position: absolute;
+  right: 40vw;
+}
+
+header ul li {
+  list-style: none;
+}
+
+header ul li a {
+  color: var(--white-font);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+main {
+  margin: 20px 8%;
+  color: var(--white-font);
+}
+
+main h1 {
+  font-size: 3rem;
+  width: 35vw;
+}
+main p {
+  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.1));
+  line-height: 1.5rem;
+  font-weight: 400;
+  width: 35vw;
+  margin: 30px 0;
+}
+
+main button {
+  margin: 30px 0;
+  color: var(--blue-font);
+  width: 200px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 50px;
+  border: none;
+  transition: 0.1s;
+}
+
+main button:hover {
+  transform: scale(1.05);
+}
+
+main button:active {
+  transform: scale(1);
+}
+
+@keyframes opacity {
+    0% {
+        filter: opacity(1);
+    }
+    100%{
+        filter: opacity(0);
+    }
+}
