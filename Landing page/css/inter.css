@@ -1,0 +1,262 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+
+:root {
+  --blueLight: #c7dff4;
+  --font: #486780;
+  --white: #fdf3f3;
+}
+
+/* configuração geral */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--blueLight);
+}
+
+h1 {
+  font-size: 25px;
+}
+p {
+  font-size: 12px;
+}
+
+a {
+  color: var(--font);
+  text-decoration: none;
+}
+
+/* configuração de layout */
+
+main {
+  height: 95vh;
+    width: 90vw;
+    display: grid;
+    grid-template-areas:
+        "sidebar mainbar mainbar"
+        "sidebar bottombar bottombar";
+    justify-content: center;
+    align-items: center;
+    justify-items: start;
+}
+
+main section {
+  padding: 15px;
+  background: var(--white);
+  color: var(--font);
+  border-radius: 10px;
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* barra lateral */
+
+.sideBar {
+  margin-right: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 250px;
+  height: 640px;
+  grid-area: sidebar;
+}
+
+.sideBar .profile .email {
+  margin: 10px 0;
+}
+
+.sidebar .profile .profilePhoto img {
+  margin: 5px;
+  width: 35px;
+  height: 35px;
+}
+
+.setting {
+  transform: translateY(-70px);
+  margin: 25px 0;
+  font-weight: bold;
+}
+
+.setting::before {
+  content: "";
+  position: absolute;
+  width: 240px;
+  border: 1px solid #a9c2d7;
+  transform: translate(0px, -15px);
+  background: var(--font);
+  border-radius: 2px;
+}
+
+.singOut a {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.singOut img {
+  width: 15px;
+}
+
+/* layout principal */
+
+.mainBar {
+  width: 900px;
+  height: 280px;
+  grid-area: mainbar;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.mainBar .favFolder {
+  width: 55%;
+}
+
+.mainBar .favFolder .setFolder a {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainBar .favFolder .setFolderUp {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mainBar .favFolder .setFolderUp img {
+  width: 70px;
+  height: 60px;
+}
+
+.mainBar .favFolder .setFolderUp p {
+  text-align: center;
+  width: 120px;
+  height: 40px;
+}
+
+.mainBar .storageConsume {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainBar .storageConsume .value {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mainBar .storageConsume .circleGraphic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 210px;
+  height: 210px;
+  border-radius: 50%;
+  background: conic-gradient(var(--blueLight) 90deg, var(--white) 0deg);
+}
+.mainBar .storageConsume .circleBackground {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 210px;
+  height: 210px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.mainBar .storageConsume .circleGraphic::before {
+  content: "";
+  position: absolute;
+  background: var(--white);
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* layout inferior */
+
+.bottomBar {
+  width: 900px;
+  height: 320px;
+  grid-area: bottombar;
+}
+
+.bottomBar .navBar {
+  display: flex;
+  align-items: center;
+}
+
+.bottomBar .filter {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.bottomBar .filter img {
+  transform: rotate(90deg);
+}
+
+.bottomBar .sourche {
+  display: flex;
+  align-items: center;
+}
+
+.bottomBar .sourche img {
+  width: 20px;
+}
+
+.bottomBar .sourche input {
+  font-size: 0.7rem;
+  margin: 0 20px;
+  padding: 10px 20px;
+  width: 250px;
+  height: 15px;
+  background: #d9d9d9;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+}
+
+.bottomBar .folderList .folders {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bottomBar .folderList .folder a {
+  width: 500px;
+  display: flex;
+  align-items: center;
+}
+
+.bottomBar .folderList .folder a img {
+  width: 25px;
+  margin: 10px;
+}
+
+.bottomBar .folderList .options img {
+  width: 15px;
+  height: 10px;
+  margin: 0 20px;
+}
