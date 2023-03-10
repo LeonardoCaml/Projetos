@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 12pt;
+    font-family: 'Inter', sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #ff5c00;
+}
+
+#contain {
+    transition: .3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 465px;
+    height: 570px;
+    background: #FFFFFF;
+    color: #000000;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.caixa {
+    display: flex;
+    flex-direction: column;
+}
+
+#titulo {
+    display: flex;
+    justify-content: center;
+}
+
+.counts {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    margin: 40px 0px;
+}
+
+.counts img {
+    width: 50px;
+    cursor: pointer;
+}
+
+#botao {
+    width: 350px;
+    height: 60px;
+    background: #0085FF;
+    color: #FFFFFF;
+    border-radius: 20px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+#email{
+    display: flex;
+    align-items: center;
+    cursor: text;
+}
+
+#senha {
+    display: flex;
+    align-items: center;
+    cursor:text;
+}
+
+#cadastro {
+    margin-left: 15px;
+    font-size: .8rem;
+    display: flex;
+    align-items: center;
+    color: #0085FF;
+}
+
+#cadastro a {
+    text-decoration: none;
+    color: #0085FF;
+}
+
+input {
+    border: none;
+    width: 285px;
+    height: 40px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+    background: transparent;
+}
+
+input:focus {
+    outline: none;
+}
+
+input[type="text"]::placeholder, input[type="password"]:focus::placeholder  {
+    transition: .6s;
+}
+
+input[type="text"]:focus::placeholder, input[type="password"]:focus::placeholder {
+  filter: opacity(.5);
+}
+
+.input {
+    margin: 10px 0;
+}
+
+.caixa p {
+    margin: 10px;
+}
+  
+label img {
+    width: 20px;
+    padding: 10px;
+}
