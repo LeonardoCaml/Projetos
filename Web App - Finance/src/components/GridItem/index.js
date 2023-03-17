@@ -25,4 +25,4 @@ const GridItem = ({ item, onDelete }) => {
   );
 };
 
-export default GridItem
+export default GridItem;
