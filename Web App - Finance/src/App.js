@@ -19,7 +19,7 @@ const App = () => {
         const amountIncome = transactionsList.filter((item) => !item.expense).map((transaction) => Number(transaction.amount))
 
         const expense = amountExpense.reduce((acc, cur) => acc + cur, 0).toFixed(2)
-        const income = amountExpense.reduce((acc, cur) => acc + cur, 0).toFixed(2)
+        const income = amountIncome.reduce((acc, cur) => acc + cur, 0).toFixed(2)
 
         const total = Math.abs(income - expense).toFixed(2)
 

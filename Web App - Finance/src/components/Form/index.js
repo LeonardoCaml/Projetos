@@ -43,7 +43,7 @@ function Form({ handleAdd })  {
             <C.RadioGroup>
                 <C.Input type='radio'id='rIncome' defaultChecked name="group1" onChange={() => setExpense(!isExpense)} />
                 <C.Label htmlFor="rExpenses">Entrada</C.Label>
-                <C.Input type='radio'id='rIncome' defaultChecked name="group1" onChange={() => setExpense(!isExpense)} />
+                <C.Input type='radio'id='rExpenses' defaultChecked name="group1" onChange={() => setExpense(!isExpense)} />
                 <C.Label htmlFor="rExpenses">Saída</C.Label>
             </C.RadioGroup>
             <C.Button onClick={handleSave}>ADICIONAR</C.Button>
